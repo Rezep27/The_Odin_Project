@@ -1,27 +1,29 @@
-:root{
+:root {
    --dark: #1F2937;
    --white: #F9FAF8;
    --blue: #3882F6;
    --grey: #E5E7EB;
+   --dark-grey: #6D747D;
 }
-*{
+
+* {
    box-sizing: border-box;
    font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
    margin: 0;
 }
 
-header{
+header {
    height: 80px;
    display: flex;
-   align-items: center; 
+   align-items: center;
    background-color: var(--dark);
    color: var(--white);
 }
 
-.header-logo{
+.header-logo {
    font-size: 24px;
    font-weight: 900;
    flex: 1 1 0;
@@ -32,7 +34,7 @@ ul {
    list-style: none;
 }
 
-header > ul{
+header>ul {
    margin: 0;
    padding: 0 0 0 10px;
    flex: 1 1 0;
@@ -42,22 +44,23 @@ header > ul{
    gap: 10px;
 }
 
-a{
+a {
    text-decoration: none;
 }
 
-.header-links li a{
+.header-links li a {
    color: var(--grey);
    font-size: 18px;
    padding: 15px;
 }
 
 
-.header-links li a:hover{
-   color: var(--grey);
+.header-links li a:hover {
+   color: var(--dark-grey);
 }
 
-.top-section{
+
+.top-section {
    padding: 75px 0px;
    height: 450px;
    display: flex;
@@ -67,42 +70,66 @@ a{
    align-items: center;
 }
 
-.hero-container{
+.hero-container {
    height: 300px;
    max-width: 600px;
-   border: 5px solid var(--white);
 
    display: flex;
-   flex: 1 1 auto;
+   flex: 0 1 auto;
    flex-direction: column;
+   align-items: flex-start;
 }
 
-.hero-title{
-   padding:10px 80px 0px 0px;
+.hero-title {
+   padding: 10px 80px 0px 0px;
    font-size: 48px;
    font-weight: 900;
-   margin-bottom: 10px;
+
+   flex: 0 1 auto;
 }
 
-.hero-subtitle{
+.hero-subtitle {
    margin: 10px 0px;
    padding: 0px 80px 0px 0px;
    font-size: 18px;
    color: var(--grey);
+
+   flex: 0 1 auto;
 }
 
-.hero-button{
-   margin-top: 10px;
+.hero-button {
    background-color: var(--blue);
    color: var(--white);
    border-radius: 10px;
+   border: 2px solid var(--blue);
+
+   width: 120px;
+   padding: 10px 20px;
+
+   font-weight: 900;
+   flex: 0 1 auto
 }
 
-.hero-image-container{
+.hero-image-container {
    height: 300px;
    max-width: 600px;
-   border: 5px solid var(--blue);
 
-   flex: 1 1 auto;
+   flex: 0 1 auto;
+
+   background-color: var(--dark-grey);
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
+
+.hero-image-container img {
+   width: 600px;
+   height: 300px;
+
+   text-align: center;
+}
+
+.image-section{
+   height: 450px;
+}
