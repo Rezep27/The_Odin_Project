@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Prueba JS</title>
+    </head>
+    <body>
+        <script>
+            console.log("Prueba de js");
+
+            function add7 (num){
+                return num + 7;
+            }
+
+            myNumber = 7
+            console.log(add7(myNumber));
+
+            myNumber2 = 3;
+
+            let multiply = (num1, num2) => num1 * num2;
+
+            console.log(multiply(myNumber,myNumber2));
+
+            function capitalize(myStr){
+                myStr = myStr.toLowerCase();
+
+                firstLetter = myStr.charAt(0);
+                restOfLetters = myStr.slice(1);
+                return firstLetter.toUpperCase() + restOfLetters;
+            }
+
+            let text = "texTo DE Prueba";
+            console.log(capitalize(text));
+
+            let lastLetter = (myStr) => myStr.at(-1);
+            console.log(lastLetter(text));
+        </script>
+    </body>
+</html>
